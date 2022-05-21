@@ -1,0 +1,102 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 3px;
+    margin: 3px;
+    border-radius: 6px;
+    border-width: 5px;
+}
+.body{
+    border-style: solid;
+    border-color: rgba(128, 128, 128, 0.61);
+    
+}
+    .header{
+        border-style: solid;
+        border-color: mediumspringgreen;
+        height: 100px
+    }
+
+    .nav{
+        border-style: solid;
+        border-color: rgb(206, 161, 93);
+        height: 40px
+    }
+    .medio{
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        padding: 0px;
+        margin: 0px;
+    }
+   
+        .article{
+            border-style: solid;
+            border-color: rgb(0, 212, 250);
+            display:flex;
+            flex-direction: column;
+            
+            width: 60%;
+            height: 750px;
+        }
+
+            .header2{
+                border-style: solid;
+                border-color: mediumspringgreen;
+                display:flex;
+                padding: 3px;
+                height: 100px;
+            }
+            .premedio{
+                display:flex;
+                flex-direction: column;
+                justify-content: space-between;
+                padding: 0px;
+                margin: 0px;
+                height: 100%;
+            }
+            .contenedor{
+                display: flex;
+                flex-direction: column;
+                height: 40%;
+                padding: 0px;
+                margin: 0px;
+                
+            }
+            .section{
+                border-style: solid;
+                border-color: rgb(185, 54, 197);
+                display: flex;
+                height: 40%;
+                
+                
+
+            }
+            .footer{
+                border-style: solid;
+                border-color: rgb(149, 165, 93);
+                display: flex;
+                align-items:baseline;
+            }
+
+        .lateral{
+            border-style: solid;
+            border-color: rgb(255, 174, 0);
+            height: 750px;
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            
+        }
+            .aside{
+                border-style: solid;
+                border-color: rgb(0, 221, 250);
+                height: 45%;
+            }
+    .footer2{
+        border-style: solid;
+        border-color: rgb(149, 165, 93);
+        height: 50px;
+        display: flex;
+        align-items:baseline;
+    }                        
