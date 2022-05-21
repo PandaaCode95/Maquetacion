@@ -1,0 +1,26 @@
+*{
+    background-color: antiquewhite;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.body{
+    display:flex;
+    height: 700px;
+    width: 100%;
+    background-color: antiquewhite;
+    justify-content: space-between;
+}
+.fotos{
+    width: 90%;
+    display:flex;
+    flex-direction:column;
+    flex-wrap: wrap;
+    background-color: antiquewhite;
+    margin: 5px;
+    align-items: center;
+    justify-content: space-around;
+}
+.imagen{
+    border:5px solid black;
+    padding: 20px;
+    margin: 5px;
+}
