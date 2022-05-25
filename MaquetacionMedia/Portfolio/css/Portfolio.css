@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+/* BARRA NAVEGADOR */
+header {
+    position: fixed;
+    font-family: 'Montserrat', sans-serif;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+
+}
+
+header .logo {
+    text-decoration: none;
+
+}
+
+header ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+header ul li a {
+    text-decoration: none;
+    padding: 6px 15px;
+    color: #4F4E4E;
+    border-radius: 20px;
+}
+
+header ul li a:hover,
+header ul li a.active {
+    background-color: #4F4E4E;
+    color: #ffffff;
+
+}
+
+/*BODY*/
+
+.body {
+    height: 150vh;
+    display: flex;
+    background-color: #4F4E4E;
+}
+
+.principal-cont {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+
+
+}
+
+.principal {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    line-height: 1.6;
+}
+
+.principal-text {
+    font-size: 2em;
+    font-weight: 400;
+    color: white;
+}
+
+.secondary-text {
+    font-size: 1.7em;
+    font-weight: 200;
+    color: white
+}
+
+.img {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: #ffffff;
+    justify-content: end;
+    position: fixed;
+    right: 0px;
+
+
+}
+
+.img-top {
+    display: flex;
+    width: 46%;
+    position: fixed;
+    right: 90px;
+    bottom: -15px;
+    
+    opacity: 1;
+}
+
+.img-inside {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    position: relative;
+}
+
+.botonDescarga {
+
+    background-color: rgb(201, 201, 201);
+    color: rgb(14, 14, 14);
+    text-decoration: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    transition-duration: 0.4s;
+    overflow: hidden;
+
+}
+
+.botonDescarga:hover {
+    background: rgb(201, 201, 201);
+    box-shadow: 0px 2px 10px 5px rgba(201, 201, 201, 0.541);
+    color: #000;
+}
+
+
+
+
+
+/* Logo Animation*/
+
+h1 {
+    color: #ffffff;
+    font-size: 2em;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 7px;
+    cursor: pointer
+}
+
+h1 span {
+    transition: 1s ease-in;
+
+}
+
+h1:hover span:nth-child(1) {
+
+    transition-duration: .5s;
+    margin-right: 5px
+}
+
+h1:hover span:nth-child(1):after {
+
+    content: "PANDA";
+}
+
+h1:hover span:nth-child(2) {
+
+
+    margin-left: 30px
+}
+
+h1:hover span {
+
+    transition: 2s ease-in-out;
+    color: rgb(0, 0, 0);
+    /* text-shadow: 0 0 10px rgba(255, 255, 255, 0.233),
+                 0 0 20px rgba(255, 255, 255, 0.61), 
+                 0 0 40px rgba(255, 255, 255, 0.466); */
+}
+
+/*BG animation*/
+.fondo {
+    
+    width: 50vh;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: positionX(50vh)
+
+}
+
+.inf{
+    position: relative;
+    display:flex;
+    height:100vh;
+    width:100%;
+    flex-direction: row;
+    margin:0px;
+    overflow: v;
+}
+.izq{
+    display:flex;
+    /* background-color: rgb(255, 255, 255); */
+    width:50%;
+    border-radius: 0px 50px 0px 0px;
+    
+}
+.der{
+    margin-top:100px;
+    display:flex;
+    background-color: #4F4E4E;
+    width: 50%;
+    border-radius: 55% 45% 0% 100% / 100% 15% 85% 0%;
+    flex-direction: row;
+    flex:wrap;
+    justify-content: space-around;
+    padding:50px
+}
+
+.icon{
+    height: 100px;
+}
+.icon:hover{
+    
+    scale:1.1;
+    transition: ease 1s;
+    
+}
+.totalbg{
+    overflow: visible;
+    position: fixed;
+    top:0;
+    right: 0;
+    height: 100vh;
+    width: 100%;
+    z-index: -1;
+}
+.fig1{
+    width: 50%;
+    height: 50%;
+    position: inherit;
+    background-color: #a1a1a1;
+    opacity: 0.3;
+    transform: rotate(1turn) 100ms;
+    animation: rotation 25s;
+    animation-iteration-count: infinite;
+    border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+    animation: rota2 150s
+}
+.fig2{
+    width: 50%;
+    height: 65%;
+    position:inherit;
+    bottom:0;
+    left:0;
+    background-color: #8a8a8a25;
+    opacity: 1;
+    border-radius: 55% 45% 83% 17% / 32% 51% 49% 68%  ;
+    z-index:-1;
+    
+    animation: rota 100s;
+
+}
+.fig3{
+    width: 80%;
+    height: 90%;
+    position:inherit;
+    bottom:0;
+    left:0;
+    background-color: #8a8a8a25;
+    opacity: 1;
+    border-radius: 55% 45% 83% 17% / 32% 51% 49% 68%  ;
+    z-index:-1;
+    
+    animation: rota 100s;
+
+}
+@keyframes rota{
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes rota2{
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+
