@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;400;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300;8..144,700&display=swap');
+
+body,html{
+    height: 100%;
+    margin:0;
+    font-size: 16px;
+    font-family: "montserrat";
+    font-weight:400;
+    line-height: 1.8em;
+    color:#666;
+    width: 100%;
+   
+    
+}
+header{
+   
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    z-index: 1000;
+    
+
+}
+header .logo{
+    color:#4F4E4E;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+header ul{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    list-style:none;
+    margin-left: 20px;
+    padding-right:30px;
+}
+header ul li a{
+    text-decoration:none;
+    padding:6px 15px;
+    color:#4F4E4E;
+    border-radius:20px;
+}
+header ul li a:hover,
+header ul li a.active
+{
+    background-color: #4F4E4E;
+    color: #ffffff;
+
+}
+
+b{
+    font-family: 'Montserrat';
+    
+}
+
+footer{
+    background-color: black;
+    z-index: 1000;
+    height:50px;
+    display:flex;
+    padding:10px;
+    flex-direction: row;
+    justify-items: baseline;
+    justify-content: space-around;
+    color: white;
+    font-family: 'Montserrat';
+    align-self: end;
+}
+
+.pimg1,.pimg2,.pimg3{
+    position:relative;
+    opacity:0.70;
+    background-position:center;
+    background-size:cover;
+    background-repeat: no-repeat;
+
+    background-attachment:fixed;
+    
+}
+ .pimg1{
+     background-image: url("../img/globos.jpg");
+     min-height: 100%;
+ } 
+
+ .pimg2{
+     background-image: url("../img/isla.jpg");
+     min-height: 400px;
+ } 
+
+ .pimg3{
+     background-image: url("../img/atardecer.jpg");
+     min-height: 400px;
+ } 
+.section{
+    text-align:center;
+    padding:50px 80px;
+}
+.section-blanco{
+    background-color:#f4f4f4;
+    color:#666;
+    
+}
+
+.section-negro{
+    background-color:#282e34;
+    color:rgb(206, 206, 206);
+
+}
+.ptext{
+    position:absolute;
+    top:50%;
+    width:100%;
+    text-align:center;
+    color:#000;
+    font-size:27px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+.border{
+ background-color: #111;
+ color:white;
+ padding:20px;   
+ opacity: 0.9;
+}
+.trans{
+    opacity:0.3;
+}
+
+
+
+.dibujo{
+    position:aboslute;
+    right: 100%;
+    bottom: 0;
+}
+.dibujito{
+    height: 95vh;
+    width: auto;
+    opacity: 0.5;
+}
+.contact{
+    padding:3em;
+    overflow:hidden;
+    color: black;
+    font-family: 'Montserrat';
+    background-color: white;
+}
+.contact label, .contact input, .contact textarea{
+    display:block;
+    width:100%;
+    margin-bottom:8px;
+}
+.contact label{
+    font-weight: 500;
+
+}
+.contact input:not([type="submit"]), .contact textarea{
+    border:none;
+    border-bottom:2px solid #11F294;
+    font-size:  20px;
+    outline: none;
+    color:#4F4E4E;
+}
+.contact textarea{
+    min-height: 100px;
+    font-family: 'Montserrat';
+}
+input[type="submit"]{
+    padding:10px;
+    border:none;
+    background-color: white;
+    color:#11F294;
+    font-size: 20px;
+    cursor: pointer;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+.contact{
+    font-family: 'Montserrat';
+    width: 70%;
+    box-sizing: border-box;
+    box-shadow: 7px 13px 37px #4f4e4e5b;
+    margin-top: 5%;
+    
+
+}
+.boxform{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+.formulario{
+    width: 50%;
+    
+    opacity: 0.7;
+    display:flex;
+    align-items:left;
+}
+.borde{
+    background-color: #111;
+    color:white;
+    padding:20px;   
+    opacity: 0.9;
+    height: min-content;
+    margin-top:10%;
+
+   }
+   .ptexto{
+    position:absolute;
+    width:100%;
+    align-items: center;
+    text-align:center;
+    color:#000;
+    font-size:17px;
+    letter-spacing:8px;
+    text-transform: uppercase;
+}
+.botones{
+    display: flex;
+    justify-content:space-around;
+    margin-left: 200px;
+    margin-top: 30px;
+  
+  }
+    .boton {
+      display: flex;
+      background-color: #EBB84A; 
+      border: none;
+      color: white;
+      padding: 20px 60px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 20px;
+      margin: 4px 2px;
+      transition-duration: 0.4s;
+      cursor: pointer;
+  
+    }
+  
+  
+    .boton:hover {
+      background-color: #cc5355;
+      color: white;
+    }
