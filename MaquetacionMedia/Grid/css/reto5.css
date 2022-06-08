@@ -1,0 +1,121 @@
+*{
+    margin:0;
+    padding:0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+   height: 100vh;
+    background-color: #e5e5f7;
+   
+}
+.container{
+    display:grid;
+    grid-template-areas: 
+    "header"
+    "partida"
+    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: .15fr 1fr .15fr;
+}
+.header{
+    background-color: white;
+    grid-area:header;
+}
+.partida{
+   
+    grid-area:partida;
+}
+.footer{
+    background-color: aqua;
+    grid-area:footer;
+}
+
+/*Creacion juego*/
+.partida{
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+    width:100%;
+    display:grid;
+    grid-template-areas: 
+    "j1 juego j2";
+    grid-template-columns: 1fr 2fr 1fr;
+}
+.juego{
+    justify-content: center;
+    align-items: center;
+    grid-area:juego;
+    display:grid;
+    grid-template-areas: 
+    "i1 i2 i3"
+    "i4 i5 i6"
+    "i7 i8 i9";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+.a{
+    height: 15vh;
+    width: 15vh;    
+    
+    margin: 2em;
+    border-radius: 100%;  
+    background-color: rgb(0, 255, 255);
+}
+.j1{
+    grid-area:j1;
+    color:black;
+    font-size: 2em;
+    text-align: center;
+}
+
+.j2{
+    grid-area:j2;
+    color:black;
+    font-size: 2em;
+    text-align: center;
+}
+.i1{
+    grid-area:i1;
+}
+
+.i2{
+    grid-area:i2;
+}
+
+.i3{
+    grid-area:i3;
+}
+
+.i4{
+    grid-area:i4;
+}
+
+.i5{
+    grid-area:i5;
+}
+
+.i6{
+    grid-area:i6;
+}
+
+.i7{
+    grid-area:i7;
+}
+
+.i8{
+    grid-area:i8;
+}
+
+.i9{
+    grid-area:i9;
+}
+.header {
+    font-size: 3em;
+    text-align: center;
+}
+.footer {
+    font-size: 3em;
+    text-align: center;
+}
+
