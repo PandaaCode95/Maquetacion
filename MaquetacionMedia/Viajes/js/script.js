@@ -8,7 +8,7 @@ let mens = document.getElementById("mensaje");
 
 let impJs = document.getAnimations("impJs");
 let arrD=[];
-let arrD2=[];
+
 let impjavita = document.getElementById("javita")
 
 function userData(){
@@ -19,11 +19,11 @@ function userData(){
     let whenUx = when.value;
 
     let data = {
-        name : userName,
-        from : fromUx,
-        destiny: whereUx,
-        nper: nperUx,
-        when :whenUx
+        "name" : userName,
+        "from" : fromUx,
+        "destiny": whereUx,
+        "nper": nperUx,
+        "when" :whenUx
     }
     arrD.push(data);
     console.log(arrD)
@@ -32,21 +32,26 @@ function userData(){
 
 function filterUx(){
     
-   arrD2 = arrD.filter(element=> element.destiny == "canarias")
+ let arrD2 = arrD.filter(element=> element.destiny == "canarias")
    
-   console.log(arrD2);
-}
-for(let i = 0 ; i<arrD2.length;i++){
-    console.log(arrD2[i])
-}
+   console.log(arrD2+ "entro");
 
-for(let i = 0 ; i < arrDeDatos2.length ; i++){
-    impjavita.innerHTML +=
+// for(let i = 0 ; i<arrD2.length;i++){
+//     console.log(arrD2[i])
+// }
+let  impjavita ="";
+for(let i = 0 ; i < arrD2.length ; i++){
+  
+  impjavita = impjavita + 3 +
     `
-    <p> ${arrDeDatos2[i].name} <br>
-        ${arrDeDatos2[i].from} <br>
-        ${arrDeDatos2[i].destiny} <br>
-        ${arrDeDatos2[i].nper} <br>
-        ${arrDeDatos2[i].when} <br> 
+    <p> ${arrD2[i].name} <br>
+        // ${arrD2[i].from} <br>
+        // ${arrD2[i].destiny} <br>
+        // ${arrD2[i].nper} <br>
+        // ${arrD2[i].when} <br> 
       </p>`
+
+}
+console.log(impjavita)
+document.getElementById("javita").innerHTML = impjavita;
 }

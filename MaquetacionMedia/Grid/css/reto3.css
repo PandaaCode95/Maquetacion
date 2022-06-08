@@ -1,0 +1,131 @@
+*{
+    padding:0;
+    margin:0;
+}
+.container{
+    height: 100vh;
+    width:100%;
+    display:grid;
+    
+        grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+        grid-template-rows: [y0] .25fr [y1] 1fr [y2] 1fr [y3] .25fr [y4];
+    
+}
+.header{
+    grid-column: x0 / x3;
+    background-color: black;
+    color:white;
+    font-size: 2em;
+    text-align: center;
+
+}
+.izq{
+    grid-column: x0 /x2;
+    grid-row: y1 / y3;
+    background-color: blue;
+    padding:2em;
+    border: 2px solid white;
+}
+.derecha{
+    grid-row: y1/ y3;
+    background-color: aquamarine;
+}
+.footer{
+    grid-column: x0 / x3;
+    grid-row:y3/y4;
+    background-color: blueviolet;
+}
+
+/* Trato .izq como papi*/
+.izq{
+    display:grid;
+    
+    grid-template-columns: [x0] 1.5fr [x1] 1fr [x2] ;
+    grid-template-rows: [y0] .5fr [y1] 1fr [y2] 1fr [y3]; 
+    row-gap: 1.8em;
+    column-gap: 1em;
+}
+.i-top{
+    grid-column:x0/x2;
+    grid-row: y0/y1;
+    border: 2px solid white ;
+    font-size: 1.6em;
+    padding: 1em;
+    color:white;
+}
+.i-izq{
+    grid-column:x0/x1;
+    grid-row: y1/y3;
+    border: 2px solid white;
+    font-size: 1em;
+    padding: 1em;
+    color:white;
+}
+.i-der{
+    grid-column:x1/x2;
+    grid-row: y1/y3;
+    border: 2px solid white;
+    font-size: 1em;
+    padding: 1em;
+    color:white;
+}
+/*Trato a menu como papi*/
+.derecha{
+    display:grid;
+
+    grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3] 1fr;
+    row-gap: 1em;
+    column-gap: 1em;
+    padding: 1em;
+    
+}
+.menu{
+    border: 2px solid black;
+    color:white;
+    text-align: center;
+    font-size: 2em;
+}
+.menu2{
+    background-color: black;
+    color:white;
+    
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+
+}
+.menu3{
+    background-color: black;
+    color:white;
+
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+.menu1{
+    background-color: black;
+    color:white;
+    
+    justify-content: center;
+    text-align: center;
+    font-size: 1.5em;
+}
+.footer{
+    display:grid;
+
+    grid-template-columns: [x0] 1fr [x1] 1fr ;
+    row-gap: .5em;
+    column-gap: .5em;
+    text-align: center;
+    justify-content: center;
+    padding: .5em;
+}
+.f-izq{
+    border:2px solid black;
+    font-size: 1.5em;
+}
+.f-der{
+    border: 2px solid black;
+    font-size: 1.5em;
+    
+}
